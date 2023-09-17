@@ -4,9 +4,8 @@ description: Lorem markdownum trabeati dicere deus.
 author: Code Stitch
 date: 2023-06-08T15:28:08.486Z
 tags:
-    - post
-    - featured
-image: /assets/images/blog/landing.jpg
+  - post
+image: /assets/images/blog/dall·e-2023-09-17-16.43.13-student-looking-at-the-futuristic-city-standing-upright-futuristic-digital-art.png
 imageAlt: Kitchen
 ---
 

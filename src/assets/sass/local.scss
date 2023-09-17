@@ -51,6 +51,12 @@
 			height: calc(581 / 16 * 1em);
 			left: 0;
 			top: 0;
+
+			&.picture-only{
+				width: 100%;
+				height:100%;
+				box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+			}
 		}
 
 		.cs-picture2 {
