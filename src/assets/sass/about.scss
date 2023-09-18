@@ -655,7 +655,7 @@
 			height: clamp(14rem, 62vw, 21.1875rem);
 			display: block;
 			position: relative;
-
+			
 			img {
 				position: absolute;
 				top: 0;
@@ -663,6 +663,7 @@
 				height: 100%;
 				width: 100%;
 				object-fit: cover;
+				border-radius: calc(24 / 16 * 1em);
 			}
 		}
 	}
