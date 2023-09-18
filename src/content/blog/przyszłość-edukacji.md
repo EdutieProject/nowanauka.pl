@@ -15,7 +15,7 @@ tags:
   - nauczyciele
   - uczeń
   - featured
-image: /assets/images/blog/dall·e-2023-09-17-16.42.56-group-of-students-working-on-a-project-in-a-skyscraper-with-a-futuristic-city-in-the-background-digital-art.png
+image: /assets/images/blog/student4.png
 imageAlt: Uczniowie w przyszłości - digital art
 ---
 <!--StartFragment-->
