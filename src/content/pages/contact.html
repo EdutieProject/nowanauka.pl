@@ -1,8 +1,12 @@
 ---
 title: 'Kontakt'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+preloadImg: '/assets/images/e-learning.png'
 permalink: 'contact/'
+eleventyNavigation:
+    key: Contact
+    title: Kontakt
+    order: 401
 ---
 
 {% extends "layouts/base.html" %}
@@ -20,9 +24,9 @@ permalink: 'contact/'
     <section id="int-hero">
         <h1 id="home-h">Odezwij się</h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/future-school.png">
-            <source media="(min-width: 601px)" srcset="/assets/images/future-school.png">
-            <img aria-hidden="true" decoding="async" src="/assets/images/future-school.png" alt="future shcool" loading="eager" width="2500" height="1667">
+            <source media="(max-width: 600px)" srcset="/assets/images/email.png">
+            <source media="(min-width: 601px)" srcset="/assets/images/email.png">
+            <img aria-hidden="true" decoding="async" src="/assets/images/email.png" alt="email" loading="eager" width="2500" height="1667">
         </picture>
     </section>
 
@@ -37,11 +41,11 @@ permalink: 'contact/'
                     <span class="cs-topper">Kontakt</span>
                     <h2 class="cs-title">Odmień swoją szkołę</h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        Kontakt z nami jest bardzo prosty. Wystarczy napisać maila na adres podany po lewej stronie albo zrobić to poprzez formularz poniżej.
                     </p>
                 </div>
                 <label>
-                    Name
+                    Imię
                     <input required type="text" id="name" name="name" placeholder="Name">
                 </label>
                 <label>
@@ -49,37 +53,31 @@ permalink: 'contact/'
                     <input required type="text" id="email" name="email" placeholder="Email">
                 </label>
                 <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                    Telefon (opcjonalnie)
+                    <input type="text" id="phone" name="phone" placeholder="Phone">
                 </label>
                 <label>
-                    How Did You Find Us
+                    Jak się o nas dowiedziałeś/aś?
                     <input type="text" id="find" name="find-us" placeholder="How did you find us?">
                 </label>
                 <label class="cs-label-message">
-                    Message
+                    Wiadomość
                     <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
                 </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
+                <button class="cs-button-solid" type="submit">Wyślij wiadomość</button>
             </form>
             <div class="cs-right-section">
                 <!--Email-->
                 <span class="cs-header">Email</span>
                 <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
                 <!--Phone-->
-                <span class="cs-header">Phone</span>
+                <span class="cs-header">Telefon</span>
                 <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
                 <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br />
-                    {{client.address.lineTwo}},
-                    <br />
+                <span class="cs-header">Miasto</span>
+                <a class="cs-link" href="{{client.address.mapLink}}" target="_blank">
                     <span class="cs-block">
                         {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
                     </span>
                 </a>
 
