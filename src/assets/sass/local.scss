@@ -268,7 +268,7 @@
 /* Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25rem) {
     #hero-229 {
-        background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg");
+        background: url("/assets/images/student-ps.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -331,7 +331,7 @@
 
         .cs-text {
             margin-bottom: calc(16 / 16 * 1rem);
-            opacity: 0.8;
+            opacity: 0.95;
             &:last-of-type {
                 margin-bottom: calc(32 / 16 * 1rem);
             }
@@ -669,7 +669,7 @@
 /* Desktop - 1500px (Parallax Effect) */
 @media only screen and (min-width: 93.75em) {
     #RTsbsr-249 {
-        background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg");
+        background: url("/assets/images/monk.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -990,11 +990,6 @@
             flex-direction: row;
         }
 
-        .cs-text {
-            columns: 2;
-            column-gap: calc(24 / 16 * 1rem);
-        }
-
         .cs-spacer {
             display: none;
         }
@@ -1025,17 +1020,6 @@
         .cs-picture {
             height: calc(460 / 16 * 1rem);
             aspect-ratio: initial;
-        }
-
-        .cs-seal {
-            /* 104 - 190px */
-            width: clamp(6.5rem, 13vw, 11.875rem);
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            /* subtract 12px (.75rem) to account for the border */
-            left: calc((clamp(6.5rem, 13vw, 11.875rem) * -0.5) + -0.75rem);
-            transform: translateY(-50%);
         }
 
         .cs-content {
@@ -1177,7 +1161,7 @@
             /* prevents flexbox from affecting height and width */
             box-sizing: border-box;
             background-color: #fff;
-            border-radius: calc(16 / 16 * 1rem);
+            // border-radius: calc(16 / 16 * 1rem);
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -1214,7 +1198,7 @@
             padding-left: calc(24 / 16 * 1rem);
             color: var(--headerColor);
             background-color: #f7f7f7;
-            border-radius: calc(8 / 16 * 1rem);
+            // border-radius: calc(8 / 16 * 1rem);
             border: none;
             /* prevents padding from adding to height and width */
             box-sizing: border-box;
@@ -1240,7 +1224,7 @@
             margin: 0;
             color: #fff;
             padding: 0 calc(48 / 16 * 1rem);
-            border-radius: calc(30 / 16 * 1rem);
+            // border-radius: calc(30 / 16 * 1rem);
             background-color: var(--primary);
             display: inline-block;
             position: relative;
