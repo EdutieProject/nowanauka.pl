@@ -227,8 +227,8 @@ eleventyNavigation:
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Telefon</span>
-                        <a href="tel:888-4565-789
-                        " class="cs-link">+48 731 001 247
+                        <a href="tel:{{client.phoneForTel}}
+                        " class="cs-link">{{client.phoneFormatted}}
                         </a>
                     </div>
                 </li>
@@ -238,7 +238,7 @@ eleventyNavigation:
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Email</span>
-                        <a href="mailto:Email@stitch.com" class="cs-link">szymon@nowanauka.pl</a>
+                        <a href="mailto:{{client.email}}" class="cs-link">{{client.email}}</a>
                     </div>
                 </li>
                 <li class="cs-li">
@@ -247,7 +247,7 @@ eleventyNavigation:
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Miasto</span>
-                        <a href="" class="cs-link">Warszawa - tutaj działamy</a>
+                        <a href="{{client.address.mapLink}}" class="cs-link">{{client.city}} - tutaj działamy</a>
                     </div>
                 </li>
             </ul>
@@ -262,10 +262,6 @@ eleventyNavigation:
             <label class="cs-label cs-email">
                 Email
                 <input class="cs-input" required type="email" id="email-1388" name="email" placeholder="Adres email, na który odpowiemy">
-            </label>
-            <label class="cs-label cs-phone">
-                Telefon
-                <input class="cs-input" type="tel" id="phone-1388" name="phone" placeholder="Zostaw kontakt, jeśli chcesz">
             </label>
             <label class="cs-label">
                 Wiadomość

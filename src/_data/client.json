@@ -1,8 +1,8 @@
 {
 	"name": "Nowa Nauka",
 	"email": "tutaj@nowanauka.pl",
-	"phoneForTel": "731 001 247",
-	"phoneFormatted": "731 001 247",
+	"phoneForTel": "731001247",
+	"phoneFormatted": "+48 731 001 247",
 	"address": {
 		"city": "Warszawa",
 		"mapLink":"https://www.google.com/maps/place/Warsaw/"
