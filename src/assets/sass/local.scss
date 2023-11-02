@@ -1251,6 +1251,16 @@
                     width: 100%;
                 }
             }
+            &:disabled {
+                background-color: #767676;
+
+                &:hover{
+                    cursor: not-allowed;
+                    &:before {
+                        width: 0%;
+                    }
+                }
+            }
         }
 
         .cs-submit {
@@ -1262,6 +1272,11 @@
                 color: #fff;
                 cursor: pointer;
             }
+        }
+
+        .warning {
+            width: 100%;
+            color: firebrick;
         }
     }
 }
